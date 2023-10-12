@@ -1,0 +1,175 @@
+
+/** controls PORTFOLIO header*/
+.header {
+    grid-template-columns: repeat(1, 12);
+    text-align: center;
+    font-size: 17vw;
+    width:100%;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+/** controls container of name-conatiner, nav*/
+.top-bar {
+    display:flex;
+    position:sticky;
+    top: 240px;
+    z-index: 11;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+}
+
+.name-rotated {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 3vw;
+    color: #000000;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Add margin at the bottom to create space */
+    padding: 15px;
+}
+
+.rectangleClare {
+    display: flex;
+    width: 1vw; /* Set the desired width */
+    height: 100%; /* Set the desired height */
+    background-color: #000000;
+}
+
+.rectangleEl {
+    display: flex;
+    width: 1vw; /* Set the desired width */
+    height: 100%; /* Set the desired height */
+    background-color: #000000;
+}
+
+.rectangleDev {
+    display: flex;
+    width: 1vw; /* Set the desired width */
+    height: 100%; /* Set the desired height */
+    background-color: #000000;
+}
+
+
+
+
+nav {
+    list-style: none;
+    position: sticky;
+}
+
+nav ul li {
+    /* display */
+    font-size: 2vw;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+ion-icon {
+    font-size: 3vw;
+    padding: 2px; /* Spacing between icons */
+}
+
+.profile-container {
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.profile {
+    max-width: 20vw;
+    height: auto;
+    /* *positon relative? top: left:*/  
+}
+
+
+
+
+
+
+footer {
+    margin:20px;
+}
+
+
+
+
+
+/* Mobile-first styles */
+.header {
+    /* Mobile header styles */
+}
+
+.name-container {
+    /* Mobile name-container styles */
+}
+
+.name-rotated {
+    /* Mobile name-rotated styles */
+}
+
+nav ul li {
+    /* Mobile navigation styles */
+}
+
+.social-icons {
+    /* Mobile social icons styles */
+}
+
+.profile-container {
+    /* Mobile profile-container styles */
+}
+
+.profile {
+    /* Mobile profile image styles */
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    .header {
+        /* Tablet and desktop header styles */
+    }
+
+    .name-container {
+        /* Tablet and desktop name-container styles */
+    }
+
+    name-rotated {
+        /* Tablet and desktop name-rotated styles */
+    }
+
+    nav ul li {
+        /* Tablet and desktop navigation styles */
+    }
+
+    .social-icons {
+        /* Tablet and desktop social icons styles */
+    }
+
+    .profile-container {
+        /* Tablet and desktop profile-container styles */
+    }
+
+    .profile {
+        /* Tablet and desktop profile image styles */
+    }
+}

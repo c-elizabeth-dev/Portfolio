@@ -1,0 +1,36 @@
+/** controls content | about me, skills and projects containers*/
+
+  
+#el{
+    border-radius: 5px;
+
+    padding: 1rem;
+    margin: 50px;
+    background-color: #a19696;
+}
+
+.content-container {
+    margin-left: 27vw;
+    margin-right: 200px;
+    box-shadow: 0px 50px 20px 0px rgba(0,0,0,0.2);
+}
+
+#hiddenContainer-about {
+    display:none;
+}
+
+.about-me-container {
+    padding: 50px 20px 50px 20px;
+}
+
+.about-me-content {
+    
+}
+
+.skills-container {
+    padding: 50px 20px 50px 20px;
+}
+
+.projects-container {
+    padding: 50px 20px 50px 20px;
+}

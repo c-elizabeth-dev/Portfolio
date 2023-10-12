@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./topnav.css">
+    <link rel="stylesheet" href="./content.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./body.css">
+    <title>MyPortfolio</title>
+</head>
+<body>
+
+
+    <header class="header">PORTFOLIO</header>
+
+
+    <div class="top-bar">    
+        <div class="name-container">
+            <div class="name-rotated">
+                <div>Clare</div><div class="rectangle"></div>
+                <div>Elizabeth</div><div class="rectangle"></div>
+                <div>Development</div><div class="rectangle"></div>
+            </div>
+        </div>
+        <br>
+        
+
+        <nav>
+            <ul>
+                <li><a href="#" id="showContainer-about">About me</a></li>    <!--add links-->
+                <li><a href="#" id="showContainer-skills">Skills</a></li>
+                <li><a href="#" id="showContainer-projects">Projects</a></li>
+                <li><a href="#" id="showContainer-contact">Contact</a></li>
+                <li>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-github"></ion-icon>
+                </li>
+            </ul>
+        </nav>
+        
+
+        <br>
+
+        <!-- <div class="profile-container">
+            <img class="profile" src="./assets/profile pic.png" alt="profile image of clare elizabeth"></img>
+        </div> -->
+        
+    </div>    
+
+    <div class="content-container">
+
+        <div id="hiddenContainer-about" class="about-me-container">
+            <p2 class="title">About me</p2>
+            <div class="about-me-content">
+                <span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt itaque deserunt voluptate quod ipsa molestias facere 
+                    aliquam numquam laudantium iure earum sint repudiandae 
+                    voluptatem possimus, libero, quibusdam non ipsam ea.
+                </span>
+            </div>
+        </div>
+        <br>
+        <div id="hiddenContainer-skills" class="skills-container">
+            <p2 class="title">Skills</p2>
+            <div class="skills-content">
+                <span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt itaque deserunt voluptate quod ipsa molestias facere 
+                    aliquam numquam laudantium iure earum sint repudiandae 
+                    voluptatem possimus, libero, quibusdam non ipsam ea.
+                </span>
+            </div>
+        </div> 
+        <br>
+        <div id="hiddenContainer-projects" class="projects-container">
+            <p2 class="title">Projects</p2>
+            <div>
+            <iframe></iframe>
+            <iframe></iframe>
+            <iframe></iframe>
+            <iframe></iframe>
+            <iframe></iframe>
+            <iframe></iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <div id="hiddenContainer-contact" class="contact-container">
+        <p2>Contact</p2>
+        <form id="form" class="topBefore">
+		
+            <input id="name" type="text" placeholder="NAME">
+            <input id="email" type="text" placeholder="E-MAIL">
+            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+            <input id="submit" type="submit" value="GO!">
+        </form>
+    </div>
+    <br>
+    <footer>
+        <div>
+        </div>
+    </footer>
+
+
+<script src="./index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
