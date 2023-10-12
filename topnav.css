@@ -1,6 +1,6 @@
 
 /** controls PORTFOLIO header*/
-.header {
+.header-portfolio {
     grid-template-columns: repeat(1, 12);
     text-align: center;
     font-size: 17vw;
@@ -16,7 +16,6 @@
 .top-bar {
     display:flex;
     position:sticky;
-    top: 240px;
     z-index: 11;
 }
 
@@ -59,16 +58,51 @@
     background-color: #000000;
 }
 
+@media screen and (min-width: 800px ){
+    .hamburger {
+        display: none;
+    }
 
+    .nav-list ul {
+        display: flex;
+        list-style: none;
+    }
+}
+/* Add additional CSS for your navigation styling */
 
+/* Styles for the hamburger menu on smaller screens (mobile) */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
 
-nav {
-    list-style: none;
-    position: sticky;
+    .nav-list ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333; /* Background color for the menu */
+        position: absolute;
+        top: 80px; /* Adjust to position the menu correctly */
+        left: 0;
+        right: 0;
+    }
+
+    .nav-list ul.active {
+        display: flex;
+    }
 }
 
-nav ul li {
-    /* display */
+
+
+.nav-list {
+    
+    list-style: none;
+    position: sticky;
+    transform: translateY(10%);
+}
+
+.nav-list ul li {
+
     font-size: 2vw;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -76,7 +110,7 @@ nav ul li {
     text-decoration: none;
 }
 
-nav a {
+.nav-list a {
     text-decoration: none;
     color: black;
 }
