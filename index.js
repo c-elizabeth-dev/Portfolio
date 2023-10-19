@@ -1,33 +1,5 @@
 
 
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const hamburger = document.querySelector(".hamburger");
-//     const body = document.querySelector("body");
-//     const navList = document.querySelector(".nav-list ul");
-
-//     hamburger.addEventListener("click", function() {
-//         if (body.classList.contains("menu-open")) {
-//             body.classList.remove("menu-open");
-//             navList.classList.remove("active");
-//         } else {
-//             body.classList.add("menu-open");
-//             navList.classList.add("active");
-//         }
-//     });
-// });
-
-// document.addEventListener("click", () => {
-//     const aboutLink = document.querySelector(".aboutLink");
-//     const skillsLink = document.querySelector(".skillsLink");
-//     const projectsLink = document.querySelector(".projectsLink");
-//     const contactLink = document.querySelector(".contactLink");
-
-//     aboutLink.addEventListener("click", () => {
-//         if (aboutLink == clicked)
-//     })
-// })
-
 document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.querySelector(".hamburger");
     const body = document.querySelector("body");
