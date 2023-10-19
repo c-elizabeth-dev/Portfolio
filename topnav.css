@@ -1,10 +1,74 @@
 
+/** mobile */
+@media screen and (max-width: 800px ){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 5px; /* Adjust to position the hamburger vertically */
+        right: 10px;
+        transition: color 0.3s;
+        z-index: 998;
+    }
+
+    .hamburger ion-icon {
+        font-size: 70px;
+        color: rgb(162, 166, 166);
+    }
+
+    body.menu-open .nav-list ul {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000; /* Background color for the expanded menu */
+        color: #fff;
+        flex-direction: column;
+        z-index: 997;
+        color: #fff; 
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 10vh;
+    }
+    
+}
+
+
+.nav-list ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333; /* Background color for the menu */
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.nav-list ul.active {
+    display: flex;
+}
+
+
 /** controls PORTFOLIO header*/
 .header-portfolio {
-    grid-template-columns: repeat(1, 12);
-    text-align: center;
-    font-size: 17vw;
-    width:100%;
+    grid-column: 1 / span 9;
+    text-align: left;
+    font-size: 10vw;
+    width:90%;
     position: sticky;
     top: 0px;
     background-color: #ffffff;
@@ -13,18 +77,18 @@
 }
 
 /** controls container of name-conatiner, nav*/
-.top-bar {
-    display:flex;
-    position:sticky;
-    z-index: 11;
-}
 
+.top-bar {
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    grid-column: 1 / 13;
+    grid-template-rows: repeat(4,1fr);
+    background-color: #c7b6b6;
+}
 .name-container {
-    display: flex;
     align-items: center;
     justify-content: flex-start;
-    
-    
+    position: fixed;
 }
 
 .name-rotated {
@@ -35,6 +99,8 @@
     margin-right: 20px;
     margin-bottom: 20px; /* Add margin at the bottom to create space */
     padding: 15px;
+    
+    
 }
 
 .rectangleClare {
@@ -58,67 +124,15 @@
     background-color: #000000;
 }
 
-@media screen and (min-width: 800px ){
-    .hamburger {
-        display: none;
-    }
+.icons {
+    position: fixed;
+    top: 200px;
+    left: 20px;
 
-    .nav-list ul {
-        display: flex;
-        list-style: none;
-    }
 }
-/* Add additional CSS for your navigation styling */
-
-/* Styles for the hamburger menu on smaller screens (mobile) */
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav-list ul {
-        display: none;
-        flex-direction: column;
-        background-color: #333; /* Background color for the menu */
-        position: absolute;
-        top: 80px; /* Adjust to position the menu correctly */
-        left: 0;
-        right: 0;
-    }
-
-    .nav-list ul.active {
-        display: flex;
-    }
-}
-
-
-
-.nav-list {
-    
-    list-style: none;
-    position: sticky;
-    transform: translateY(10%);
-}
-
-.nav-list ul li {
-
-    font-size: 2vw;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    list-style: none;
-    text-decoration: none;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: black;
-}
-
-
 
 ion-icon {
-    font-size: 3vw;
+    font-size: 20px;
     padding: 2px; /* Spacing between icons */
 }
 
@@ -147,63 +161,3 @@ footer {
 
 
 
-
-/* Mobile-first styles */
-.header {
-    /* Mobile header styles */
-}
-
-.name-container {
-    /* Mobile name-container styles */
-}
-
-.name-rotated {
-    /* Mobile name-rotated styles */
-}
-
-nav ul li {
-    /* Mobile navigation styles */
-}
-
-.social-icons {
-    /* Mobile social icons styles */
-}
-
-.profile-container {
-    /* Mobile profile-container styles */
-}
-
-.profile {
-    /* Mobile profile image styles */
-}
-
-/* Media query for larger screens (e.g., tablets and desktops) */
-@media (min-width: 768px) {
-    .header {
-        /* Tablet and desktop header styles */
-    }
-
-    .name-container {
-        /* Tablet and desktop name-container styles */
-    }
-
-    name-rotated {
-        /* Tablet and desktop name-rotated styles */
-    }
-
-    nav ul li {
-        /* Tablet and desktop navigation styles */
-    }
-
-    .social-icons {
-        /* Tablet and desktop social icons styles */
-    }
-
-    .profile-container {
-        /* Tablet and desktop profile-container styles */
-    }
-
-    .profile {
-        /* Tablet and desktop profile image styles */
-    }
-}

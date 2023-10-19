@@ -1,80 +1,95 @@
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const hamburger = document.querySelector(".hamburger");
+//     const body = document.querySelector("body");
+//     const navList = document.querySelector(".nav-list ul");
+
+//     hamburger.addEventListener("click", function() {
+//         if (body.classList.contains("menu-open")) {
+//             body.classList.remove("menu-open");
+//             navList.classList.remove("active");
+//         } else {
+//             body.classList.add("menu-open");
+//             navList.classList.add("active");
+//         }
+//     });
+// });
+
+// document.addEventListener("click", () => {
+//     const aboutLink = document.querySelector(".aboutLink");
+//     const skillsLink = document.querySelector(".skillsLink");
+//     const projectsLink = document.querySelector(".projectsLink");
+//     const contactLink = document.querySelector(".contactLink");
+
+//     aboutLink.addEventListener("click", () => {
+//         if (aboutLink == clicked)
+//     })
+// })
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Get a reference to the link and the container
-    const showContainerAbout = document.getElementById("showContainer-about");
-    const hiddenContainerAbout = document.getElementById("hiddenContainer-about");
+    const hamburger = document.querySelector(".hamburger");
+    const body = document.querySelector("body");
+    const navList = document.querySelector(".nav-list ul");
 
-    // Add a click event listener to the link
-    showContainerAbout.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the link from navigating
-
-        // Check if the container is currently hidden
-        if (hiddenContainerAbout.style.display === "none") {
-            // Show the container
-            hiddenContainerAbout.style.display = "block";
+    hamburger.addEventListener("click", function() {
+        if (body.classList.contains("menu-open")) {
+            body.classList.remove("menu-open");
+            navList.classList.remove("active");
         } else {
-            // Hide the container
-            hiddenContainerAbout.style.display = "block";
+            body.classList.add("menu-open");
+            navList.classList.add("active");
         }
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Get a reference to the link and the container
-    const showContainerSkills = document.getElementById("showContainer-skills");
-    const hiddenContainerSkills = document.getElementById("hiddenContainer-skills");
+    // Get references to the section containers
+    const aboutSection = document.getElementById("hiddenContainer-about");
+    const skillsSection = document.getElementById("hiddenContainer-skills");
+    const projectsSection = document.getElementById("hiddenContainer-projects");
+    const contactSection = document.getElementById("hiddenContainer-contact");
 
-    // Add a click event listener to the link
-    showContainerSkills.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the link from navigating
+    // Get references to the menu links
+    const aboutLink = document.querySelector(".aboutlink");
+    const skillsLink = document.querySelector(".skillslink");
+    const projectsLink = document.querySelector(".projectslink");
+    const contactLink = document.querySelector(".contactlink");
 
-        // Check if the container is currently hidden
-        if (hiddenContainerSkills.style.display === "none") {
-            // Show the container
-            hiddenContainerSkills.style.display = "block";
-        } else {
-            // Hide the container
-            hiddenContainerSkills.style.display = "block";
-        }
+    // Function to hide all sections
+    function hideAllSections() {
+        aboutSection.style.display = "none";
+        skillsSection.style.display = "none";
+        projectsSection.style.display = "none";
+        contactSection.style.display = "none";
+    }
+
+    // Add click event listeners to show/hide sections and close the menu
+    aboutLink.addEventListener("click", function() {
+        hideAllSections();
+        aboutSection.style.display = "block";
+        body.classList.remove("menu-open");
+        navList.classList.remove("active");
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Get a reference to the link and the container
-    const showContainerProjects = document.getElementById("showContainer-projects");
-    const hiddenContainerProjects = document.getElementById("hiddenContainer-projects");
-
-    // Add a click event listener to the link
-    showContainerProjects.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the link from navigating
-
-        // Check if the container is currently hidden
-        if (hiddenContainerProjects.style.display === "none") {
-            // Show the container
-            hiddenContainerProjects.style.display = "block";
-        } else {
-            // Hide the container
-            hiddenContainerProjects.style.display = "block";
-        }
+    skillsLink.addEventListener("click", function() {
+        hideAllSections();
+        skillsSection.style.display = "block";
+        body.classList.remove("menu-open");
+        navList.classList.remove("active");
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Get a reference to the link and the container
-    const showContainerContact = document.getElementById("showContainer-contact");
-    const hiddenContainerContact = document.getElementById("hiddenContainer-contact");
+    projectsLink.addEventListener("click", function() {
+        hideAllSections();
+        projectsSection.style.display = "block";
+        body.classList.remove("menu-open");
+        navList.classList.remove("active");
+    });
 
-    // Add a click event listener to the link
-    showContainerContact.addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the link from navigating
-
-        // Check if the container is currently hidden
-        if (hiddenContainerContact.style.display === "none") {
-            // Show the container
-            hiddenContainerContact.style.display = "block";
-        } else {
-            // Hide the container
-            hiddenContainerContact.style.display = "block";
-        }
+    contactLink.addEventListener("click", function() {
+        hideAllSections();
+        contactSection.style.display = "block";
+        body.classList.remove("menu-open");
+        navList.classList.remove("active");
     });
 });
 

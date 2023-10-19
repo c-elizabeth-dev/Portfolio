@@ -12,7 +12,7 @@
 <body>
 
 
-    <header class="header">PORTFOLIO</header>
+    <header class="header-portfolio">PORTFOLIO</header>
 
 
     <div class="top-bar">    
@@ -24,21 +24,33 @@
             </div>
         </div>
         <br>
+        <div class="icons">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+        </div>
+        <br><br><br>
         
+    </div>
 
-        <nav>
-            <ul>
-                <li><a href="#" id="showContainer-about">About me</a></li>    <!--add links-->
-                <li><a href="#" id="showContainer-skills">Skills</a></li>
-                <li><a href="#" id="showContainer-projects">Projects</a></li>
-                <li><a href="#" id="showContainer-contact">Contact</a></li>
-                <li>
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                    <ion-icon name="logo-github"></ion-icon>
-                </li>
-            </ul>
-        </nav>
-        
+        <section id="header">
+            <div class="header container">
+              <div class="nav-bar">
+                <div class="brand">
+                </div>
+
+                <div class="nav-list"> <!--<nav>-->
+                  <div class="hamburger"><ion-icon name="menu-outline"></ion-icon><div class="bar"></div></div>
+                  <ul>
+                    <li><a class="aboutlink" href="#" >About</a></li>
+                    <li><a class="skillslink" href="#">Skills</a></li>
+                    <li><a class="projectslink" href="#">Projects</a></li>
+                    <li><a class="contactlink" href="#">Contact</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </section>
 
         <br>
 
@@ -46,31 +58,31 @@
             <img class="profile" src="./assets/profile pic.png" alt="profile image of clare elizabeth"></img>
         </div> -->
         
-    </div>    
+        
 
-    <div class="content-container">
+   
 
         <div id="hiddenContainer-about" class="about-me-container">
             <p2 class="title">About me</p2>
             <div class="about-me-content">
-                <span>
+                <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt itaque deserunt voluptate quod ipsa molestias facere 
                     aliquam numquam laudantium iure earum sint repudiandae 
                     voluptatem possimus, libero, quibusdam non ipsam ea.
-                </span>
+                </p>
             </div>
         </div>
         <br>
         <div id="hiddenContainer-skills" class="skills-container">
             <p2 class="title">Skills</p2>
             <div class="skills-content">
-                <span>
+                <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt itaque deserunt voluptate quod ipsa molestias facere 
                     aliquam numquam laudantium iure earum sint repudiandae 
                     voluptatem possimus, libero, quibusdam non ipsam ea.
-                </span>
+                </p>
             </div>
         </div> 
         <br>
@@ -86,21 +98,19 @@
 
             </div>
         </div>
-    </div>
+
 
     <br>
 
 
     <div id="hiddenContainer-contact" class="contact-container">
-        <p2>Contact</p2>
-        <form id="form" class="topBefore">
-		
-            <input id="name" type="text" placeholder="NAME">
-            <input id="email" type="text" placeholder="E-MAIL">
-            <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-            <input id="submit" type="submit" value="GO!">
-        </form>
+        
+              <div class="contact-info">
+                <h3>Contact</h3>
+                <h4>c.elizabeth.keane@gmail.com</h4>
+              </div>      
     </div>
+
     <br>
     <footer>
         <div>

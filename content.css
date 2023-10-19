@@ -1,32 +1,24 @@
 /** controls content | about me, skills and projects containers*/
 
-  
-#el{
-    border-radius: 5px;
 
-    padding: 1rem;
-    margin: 50px;
-    background-color: #a19696;
-}
 
-.content-container {
-    padding: 20px;
-}
-
-#hiddenContainer-about {
-    /* display:none; */
-}
-
-.about-me-container {
-    padding: 50px 20px 50px 20px;
-    margin-left: 50px;
-    margin-right:50px; 
+.about-me-container,
+.skills-container,
+.projects-container, 
+.contact-container {
+    grid-column: 2 / span 8;
+    margin:10px;
     box-shadow: 0px 50px 20px 0px rgba(0,0,0,0.2);
+    display: none;
 }
 
-.about-me-content p{
+.about-me-content p,
+.skills-content p,
+.projects-content div,
+.contact-info h3 h4 {
     display:flex;
     justify-content: center;
+    padding: 20px;
 }
 
 
@@ -34,26 +26,20 @@
     /* display:none; */
 }
 
-.skills-container {
-    padding: 50px 20px 50px 20px;
-    margin-left: 50px;
-    margin-right:50px; 
-    box-shadow: 0px 50px 20px 0px rgba(0,0,0,0.2);
-}
+
 
 #hiddenContainer-projects {
     /* display:none; */
 }
 
-.projects-container {
-    padding: 50px 20px 50px 20px;
-    margin-left: 50px;
-    margin-right:50px; 
-    box-shadow: 0px 50px 20px 0px rgba(0,0,0,0.2);
-}
 
 .title {
     display:flex;
     justify-content: center;
+}
+
+.banner {
+    width: 100vw;
+    height: auto;
 }
 

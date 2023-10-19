@@ -299,7 +299,7 @@ console.log(`This is ${secondSubject} subject`);
 
 //! Objects
 // Entity which contains property
-// Property: data thats contained in onject
+// Property: data thats contained in object
 
 
 let alarm={

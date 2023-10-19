@@ -5,7 +5,10 @@
 }
 
 body {
-    display:grid;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     font-family: Arial, sans-serif;
-
 }
+
+
+
