@@ -4,14 +4,17 @@
     cursor: pointer;
     position: fixed;
     top: 5px; 
-    right: 10px;
+    right: 20px;
     transition: color 0.3s;
     z-index: 999;
+    background-color: rgb(205, 252, 110);
+    border-radius:50%;
 }
 
 .hamburger ion-icon {
-    font-size: 4em;
-    color: rgb(162, 166, 166);
+    font-size: 3em;
+    -webkit-text-stroke: 2px rgb(205, 252, 110) ; 
+    color: rgb(255, 255, 255); 
 }
 
 body.menu-open .nav-list ul {
@@ -21,11 +24,10 @@ body.menu-open .nav-list ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000000; /* Background color for the expanded menu */
+    background-color: #607d99; 
     color: #fff;
     flex-direction: column;
     z-index: 998;
-    color: #fff; 
 }
 
 ul {
@@ -38,10 +40,15 @@ ul {
 
 
 a {
-    color: #fff;
+    font-size: 4em;
+    font-family: 'Righteous', sans-serif;
+    -webkit-text-stroke: 2px rgb(205, 252, 110);
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
-    font-size: 10vh;
+    font-size: 50px;
+    text-shadow: 3px 3px #151b39;
+    
 }
     
 
@@ -49,8 +56,7 @@ a {
 
 .nav-list ul {
     display: none;
-    flex-direction: column;
-    background-color: #333; /* Background color for the menu */
+    flex-direction: column;  
     position: absolute;
     left: 0;
     right: 0;
@@ -64,72 +70,64 @@ a {
 
 
 header {
-    display: grid; 
+    display: flex;
+    flex-direction: column;
     grid-column: 1 / 5;
-    border: 5px solid #249f4f;
     position: sticky;
+    color:#fff;
+    top: 0px;
 }
 
-/** controls PORTFOLIO header*/
-.header-portfolio h1{
+
+.header-portfolio {
     text-align: left;
-    font-size: 10vw;
     position: sticky;
     top: 0px;
-    background-color: #ffffff;
-    color: black;
-    margin-bottom: 20px;
-    width: max-content;
-    border: 5px solid #d61b1b;
-}
-
-/** controls container of name-conatiner, nav*/
-
-.top-bar {
-    display: block;
-    background-color: #ffffff;
-    border: 2px solid #e41acc;
-}
-.name-container {
-    width: max-content;
-    border: 2px solid #000000;
+    margin-left: 5px;
+    padding-bottom: 10px;
+    z-index: 999;
+    font-family: 'Righteous', sans-serif;
+    font-size: 50px;
+    -webkit-text-stroke: 1px rgb(205, 252, 110) ; 
+    color: white; 
+    z-index: 999;
 }
 
 
-
-.icons {
-    width: max-content;
-    top: 200px;
-    left: 20px;
-    color: black;
-    border: 2px solid #000000;
+.icon-container {
+    display: flex;
+    
 }
 
 .icon-link ion-icon {
-    font-size: 20px;
-    padding: 2px;
-    color: black;
+    display:flex;
+    margin-left: 5px;
+    padding-right: 10px;
+    font-size: 30px;
+    color: rgb(252, 250, 250);
+    text-shadow: 2px 2px #151b39;
 }
 
 
-.profile-container {
-    text-align: right;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+.name-container {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #fdecf4;
+    text-shadow: 2px 2px #151b39;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+    padding-top: 5px;
 }
 
-.profile {
-    max-width: 20vw;
-    height: auto;
-    /* *positon relative? top: left:*/  
-}
 
 
 
-footer {
-    margin:20px;
-}
+
+
+
+
 
 
 

@@ -38,28 +38,28 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add click event listeners to show/hide sections and close the menu
     aboutLink.addEventListener("click", function() {
         hideAllSections();
-        aboutSection.style.display = "block";
+        aboutSection.style.display = "flex";
         body.classList.remove("menu-open");
         navList.classList.remove("active");
     });
 
     skillsLink.addEventListener("click", function() {
         hideAllSections();
-        skillsSection.style.display = "block";
+        skillsSection.style.display = "flex";
         body.classList.remove("menu-open");
         navList.classList.remove("active");
     });
 
     projectsLink.addEventListener("click", function() {
         hideAllSections();
-        projectsSection.style.display = "block";
+        projectsSection.style.display = "flex";
         body.classList.remove("menu-open");
         navList.classList.remove("active");
     });
 
     contactLink.addEventListener("click", function() {
         hideAllSections();
-        contactSection.style.display = "block";
+        contactSection.style.display = "flex";
         body.classList.remove("menu-open");
         navList.classList.remove("active");
     });

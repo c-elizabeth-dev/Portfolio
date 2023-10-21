@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./topnav.css">
     <link rel="stylesheet" href="./content.css">
-    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./body.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chakra+Petch&family=Exo+2&family=Nothing+You+Could+Do&family=Pixelify+Sans&family=Press+Start+2P&family=Righteous&family=Shadows+Into+Light&family=Tilt+Neon&display=swap" rel="stylesheet">
     <title>MyPortfolio</title>
 </head>
 <body>
@@ -14,67 +15,61 @@
 
     <header>
         <h1 class="header-portfolio">PORTFOLIO</h1>
-        <br><br>
-        <div class="top-bar">    
-            <div class="name-container">
-                <div>Clare</div>
-                <div>Elizabeth</div>
-                <div>Development</div>
-                
-            </div>
-            <br>
-            <div class="icons">
+            <div class="icon-container">
                 <a class=icon-link href="https://www.linkedin.com/in/clare-elizabeth-keane-hedges-4bb8ab101/"">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
-                <a class=icon-link href="https://github.com/c-elizabeth-dev/Portfolio">
+            
+                <a class=icon-link href="https://github.com/c-elizabeth-dev">
                     <ion-icon name="logo-github"></ion-icon>
-                </a>  
+                </a> 
             </div>
-        </div>
+            <div class="name-container">
+                <div>CLARE</div>
+                <div>ELIZABETH</div>
+                <div>DEVELOPMENT</div>
+            </div>
     </header>
 
-        <section id="header">
-            <div class="header container">
-              <div class="nav-bar">
-                <div class="nav-list"> <!--<nav>-->
-                  <div class="hamburger"><ion-icon name="menu-outline"></ion-icon><div class="bar"></div></div>
-                  <ul>
-                    <li><a class="aboutlink" href="#" >About</a></li>
-                    <li><a class="skillslink" href="#">Skills</a></li>
-                    <li><a class="projectslink" href="#">Projects</a></li>
-                    <li><a class="contactlink" href="#">Contact</a></li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-        <br>
-
-        <!-- <div class="profile-container">
-            <img class="profile" src="./assets/profile pic.png" alt="profile image of clare elizabeth"></img>
-        </div>  -->
         
-    <br>
-    <img class="banner" src="./assets/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg"></img>
-        
+    <div class="nav-list"> 
+        <div class="hamburger"><ion-icon name="menu-outline"></ion-icon><div class="bar"></div></div>
+            <ul>
+                <li><a class="aboutlink" href="#" >About</a></li>
+                <li><a class="skillslink" href="#">Skills</a></li>
+                <li><a class="projectslink" href="#">Projects</a></li>
+                <li><a class="contactlink" href="#">Contact</a></li>
+            </ul>
+    </div>
 
-   
 
     <div id="hiddenContainer-about" class="about-me-container">
         <p2 class="title">About me</p2>
         <div class="about-me-content">
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt itaque deserunt voluptate quod ipsa molestias facere 
-                aliquam numquam laudantium iure earum sint repudiandae 
-                voluptatem possimus, libero, quibusdam non ipsam ea.
+                My journey to a fulfilling career in software development has been marked 
+                by determination, a can-do attitude, and a desire to learn. I embarked on a 
+                transformative 12-week intensive bootcamp at Just IT Training Ltd, London, 
+                where I delved into both front-end and back-end development. 
+                <br>This educational journey not only exposed me to essential programming languages such as HTML, 
+                CSS, JavaScript, Python, and SQL but also equipped me with additional 
+                problem-solving skills, creativity, and confidence. <br>
+                Throughout my career, including my time in retail and customer service, I've 
+                excelled in building strong rapport with clients and other business owners. <br>
+                My persistence, tenacity, and amiable disposition have been essential in developing 
+                and maintaining lasting relationships. When faced with challenges, I approach them 
+                with a goal to find solutions and move forward. This adaptability and quick-thinking 
+                nature have been critical in my career journey. <br>
+                As I work towards a future as a junior software developer, 
+                I intend to leverage my creative eye, proficient graphic design skills, and 
+                strong knowledge of Photoshop, Procreate, and other design tools, alongside my 
+                more analytical side. My ability to connect with people, solve problems efficiently, 
+                and embrace new learning challenges positions me to thrive in this exciting transition, 
+                where I am enthusiastic about the opportunities and experiences that lie ahead. 
             </p>
         </div>
     </div>
-    <br>
+
     <div id="hiddenContainer-skills" class="skills-container">
         <p2 class="title">Skills</p2>
         <div class="skills-content">
@@ -86,10 +81,10 @@
             </p>
         </div>
     </div> 
-    <br>
+    
     <div id="hiddenContainer-projects" class="projects-container">
         <p2 class="title">Projects</p2>
-        <div>
+        <div class="project-frames">
         <iframe></iframe>
         <iframe></iframe>
         <iframe></iframe>
@@ -99,23 +94,21 @@
         </div>
     </div>
 
-
-<br>
-
-
 <div id="hiddenContainer-contact" class="contact-container">
-        
-            <div class="contact-info">
-            <h3>Contact</h3>
-            <h4>c.elizabeth.keane@gmail.com</h4>
-            </div>      
+    
+        <h3 class="title">Contact</h3>
+        <h4>c.elizabeth.keane@gmail.com</h4>
+        <div class="icon-container-c">
+            <a class=icon-link-c href="https://www.linkedin.com/in/clare-elizabeth-keane-hedges-4bb8ab101/"">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class=icon-link-c href="https://github.com/c-elizabeth-dev">
+                <ion-icon name="logo-github"></ion-icon>
+            </a> 
+        </div>    
 </div>
 
-    <br>
-    <footer>
-        <div>
-        </div>
-    </footer>
+
 
 
 <script src="./index.js"></script>
