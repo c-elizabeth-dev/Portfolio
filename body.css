@@ -9,7 +9,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     font-family: Arial, sans-serif;
-    background-image: url('/assets/background-mobile.png');
+    background-image: url('./assets/background-mobile.png');
     background-size: cover;
     background-repeat:repeat;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
-        background-image: url('/assets/background.png');
+        background-image: url('./assets/background.png');
         background-size: cover;
         background-repeat:repeat;
         background-attachment: fixed;
