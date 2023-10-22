@@ -135,12 +135,15 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 40px;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 50px;
         padding: 10px;
         background: rgba(255, 255, 255, 0.52);
         backdrop-filter: blur( 1.5px );
         -webkit-backdrop-filter: blur( 1.5px );
         border-radius: 20px;
+        position: fixed;
         
     }
 
