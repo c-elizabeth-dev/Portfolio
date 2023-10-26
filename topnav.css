@@ -131,6 +131,13 @@ header {
         display: none;
     }
 
+    .nav-list li a:hover {
+        background-color: #607d99;
+        color:#ffffff;
+        border-radius: 50px;
+        padding: 10px;
+    }
+
     .nav-list ul {
         display: flex;
         flex-direction: row;
@@ -142,7 +149,7 @@ header {
         background: rgba(255, 255, 255, 0.52);
         backdrop-filter: blur( 1.5px );
         -webkit-backdrop-filter: blur( 1.5px );
-        border-radius: 20px;
+        border-radius: 50px;
         position: fixed;
         
     }
@@ -151,11 +158,12 @@ header {
         font-size: 4em;
         font-family: 'Righteous', sans-serif;
         color: rgb(15, 23, 70);
-        -webkit-text-stroke: 0px rgb(12, 15, 53);
+        /* -webkit-text-stroke: 0px rgb(12, 15, 53); */
         text-decoration: none;
         text-align: center;
         font-size: 50px;
         text-shadow: none;
+        padding: 10px;
     }
 
     .header-portfolio {
