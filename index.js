@@ -65,3 +65,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// // Function to add the 'spin' class when scrolling
+// function handleScroll() {
+//     const elements = document.querySelectorAll('.cross, .circle, .arrow, .shape');
+//     elements.forEach((element) => {
+//         const rect = element.getBoundingClientRect();
+//         const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
+//         if (isVisible) {
+//             element.classList.add('spin');
+//         } else {
+//             element.classList.remove('spin');
+//         }
+//     });
+// }
+
+// // Add a scroll event listener to trigger animation on scroll
+// window.addEventListener('scroll', handleScroll);
+
+// // Initial check to apply animation to visible elements on page load
+// handleScroll();

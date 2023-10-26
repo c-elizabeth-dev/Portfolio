@@ -19,10 +19,10 @@
     -webkit-backdrop-filter: blur( 4.5px );
     border-radius: 20px;
     color: #071139;
+    z-index:20;
 }
 
 .about-me-content p,
-.skills-content p,
 .project-frames,
 .contact-container h4 {
     display:flex;
@@ -32,6 +32,27 @@
     text-align: center;
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
+}
+
+.skills-content div {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 5px;
+}
+
+.skills-content ion-icon {
+    font-size: 50px;
+    padding: 15px;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+.skills-content ion-icon:hover {
+    background-color: rgb(205, 252, 110);
+    border-radius: 50px;
 }
 
 .project-card {
@@ -55,6 +76,11 @@
     color: #071139;
 }
 
+.icon-link-c ion-icon:hover {
+    background-color:rgb(205, 252, 110);
+    border-radius: 50px;
+}
+
 .title {
     text-align: center;
     padding: 10px;
@@ -65,96 +91,122 @@
 }
 
 
-@media screen and (min-width: 900px) {
-    .about-me-container,
-    .skills-container,
-    .projects-container, 
-    .contact-container {
-        display: none;
-        margin-bottom: 250px;
-        margin-top: 200px;
-        margin-left: 150px;
-        margin-right: 150px;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.601);
-        backdrop-filter: blur( 4.5px );
-        -webkit-backdrop-filter: blur( 4.5px );
-        border-radius: 20px;
-        color: #071139;
-    }
+/*----------------------------------------------------------------------------------------------------*/ 
 
-    .about-me-content p,
-    .skills-content p,
-    .project-frames,
-    .contact-container h4 {
-        padding: 15px;
-        text-align: center;
-        font-family: 'Exo 2', sans-serif;
-        font-size: 25px;
-    }
+    @media screen and (min-width: 900px) {
+        .about-me-container,
+        .skills-container,
+        .projects-container, 
+        .contact-container {
+            display: none;
+            margin-bottom: 250px;
+            margin-top: 200px;
+            margin-left: 150px;
+            margin-right: 150px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.601);
+            backdrop-filter: blur( 4.5px );
+            -webkit-backdrop-filter: blur( 4.5px );
+            border-radius: 20px;
+            color: #071139;
+            z-index:20;
+        }
 
-    .title {
-        text-align: center;
-        padding: 10px;
-        margin-bottom: 10px;
-        font-size: 40px;
-        font-family: 'Righteous', sans-serif;
-        color: #071139;
-    }
+        .about-me-content p,
+        .project-frames,
+        .contact-container h4 {
+            padding: 15px;
+            text-align: center;
+            font-family: 'Exo 2', sans-serif;
+            font-size: 25px;
+        }
 
+        .skills-content {
+            display:flex;
+            justify-content: center;
+            font-size: 30px;
+        }
 
-    .icon-link-c ion-icon {
-        padding: 20px;
-        font-size: 40px;
-        color: #071139;
-    }
+        .skills-content div {
+            padding: 10px;
+        }
 
-    
-    .project-frames {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat (4, 1fr);
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-    }
+        .skills-content ion-icon {
+            font-size: 70px;
+            padding: 20px;
+        }
 
-    .project-card {
-        border: 2px solid black; 
-    }
-
-    .project-card p {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        border: 2px solid black;
-        font-size: 20px;
+        .skills-content ion-icon:hover {
+            background-color: rgb(205, 252, 110);
+            border-radius: 50px;
+        }
         
-    }
+        .skills-content .small-text {
+            padding: 10px;
+        }
 
-    .project-card:nth-child(1) {
-        grid-column: 1 / span 2;
-    }
+        .title {
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-family: 'Righteous', sans-serif;
+            color: #071139;
+        }
 
-    .project-card:nth-child(2) {
-        grid-column: span 1;
-    }
 
-    .project-card:nth-child(3) {
-        grid-column: span 1;
-    }
+        .icon-link-c ion-icon {
+            padding: 20px;
+            font-size: 40px;
+            color: #071139;
+        }
 
-    .project-card:nth-child(4) {
-        grid-column: span 2;
-    }
+        
+        .project-frames {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat (4, 1fr);
+            grid-auto-columns: 1fr;
+            grid-auto-rows: 1fr;
+        }
 
-    .project-card:nth-child(5) {
-       
-    
-    }
+        .project-card {
+            border: 2px solid black; 
+        }
 
-    .project-card:nth-child(6) {
-       
-    
-    }
+        .project-card p {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 2px solid black;
+            font-size: 20px;
+            
+        }
 
-}
+        .project-card:nth-child(1) {
+            grid-column: 1 / span 2;
+        }
+
+        .project-card:nth-child(2) {
+            grid-column: span 1;
+        }
+
+        .project-card:nth-child(3) {
+            grid-column: span 1;
+        }
+
+        .project-card:nth-child(4) {
+            grid-column: span 2;
+        }
+
+        .project-card:nth-child(5) {
+        
+        
+        }
+
+        .project-card:nth-child(6) {
+        
+        
+        }
+
+    }
