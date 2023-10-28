@@ -49,7 +49,7 @@
 
 
     <div id="hiddenContainer-about" class="about-me-container">
-        <p2 class="title">About me</p2>
+        <h3 class="title">About me</h3>
         <div class="about-me-content">
             <p>
                 My journey to a fulfilling career in software development has been marked 
@@ -76,7 +76,7 @@
     </div>
 
     <div id="hiddenContainer-skills" class="skills-container">
-        <p2 class="title">Skills</p2>
+        <h3 class="title">Skills</h3>
         <div class="skills-content">
             <div>
                 <ion-icon name="logo-html5"></ion-icon>
@@ -98,42 +98,87 @@
                 <ion-icon name="logo-github"></ion-icon>
                 <p class="small-text">GitHub</p>
             </div>
+            <div>
+                <ion-icon name="server"></ion-icon>
+                <p class="small-text">MySQL</p>
+            </div>
+       
+        </div> 
+
+            <br>
+            <p>
+                Since the start of my course with JustIT I have delved into learning the foundations of HTML, CSS, JAVASCRIPT, MYSQL and PYTHON. In my own time I have 
+                gotten familiar with the use of GitHub which is a brilliant and essential tool in software development.
+                I have used Flask - as a you can see in my projects - to present a Python film app I created and will be spending time on gaining a deeper knowledge on this framework.
+                <br><br>
+                I will also be dedicating the next few months to build on my use of REACT.JS and researching which other tools and frameworks I feel would complement my work.
+            </p>
+      
+        <div class="iconnextcont">
+            <div class="iconnext">
+                <ion-icon name="logo-react"></ion-icon>
+            </div>
+            <div class="iconnext">
+                <img src="/assets/flask_logo_icon_145276.svg"></img>
+            </div>
         </div>
-        <div></div>
-    </div> 
+    </div>
     
     <div id="hiddenContainer-projects" class="projects-container">
-        <p2 class="title">Projects</p2>
+        <h3 class="title">Projects</h3>
+        
         <div class="project-frames">
             <section class="project-card">
-                <h4>project title 1</h4>
-                <iframe src="" frameborder="1"></iframe>
-                <p>Lorem ipsum dolorignissimos neque quod in.</p>
+                <h4>Productivity Project</h4>
+                
+                <a href="https://c-elizabeth-dev.github.io/Productivity-project/" target="_blank" rel="noopener">
+                    <img src="/assets/Productivitytemp.png"></img>
+                </a>
+                <p class="clicktoview">Click Image to see app</p>
+                <p>Using HTML, CSS and JAVASCRIPT, I created a productivity helper app. The app contains a functional calculator, calendar, a to do list
+                    where the user can check off and delete tasks and a budget tracker with local storage implemented.
+                    To improve this project in the future I am working on gaining a good understanding of working with Flask and perhaps implementing
+                    a user log in and database.
+                </p>
+                <a class="gitlink" href="https://github.com/c-elizabeth-dev/Productivity-project" target="_blank" rel="noopener">GitHub code</a>
+            </section>
+
+            <section class="project-card">
+                <h4>Site Clone</h4>
+                <a href="https://c-elizabeth-dev.github.io/site-clone-ex-1-shop/" target="_blank" rel="noopener">
+                    <img src="/assets/siteclonepg1.png"></img>
+                </a>
+                <p class="clicktoview">Click Image to see app</p>
+                <p>Using HTML, CSS and JAVASCRIPT, I successfully aesthetically cloned a well known jewellery website. This project was completed in week 3
+                    of my course and I have since improved my work flow and responsive design. I found with this project, starting with the desktop layout
+                    led to difficulties at the time in making it responsive on mobile. I am very pleased with the end result on desktop and it has since 
+                    helped me learn the importance of a thought out work flow. I now approach most projects with a mobile first approach which has improved my web design.
+                </p>
+                <a class="gitlink" href="https://github.com/c-elizabeth-dev/site-clone-ex-1-shop" target="_blank" rel="noopener">GitHub code</a>
+            
             </section>
             <section class="project-card">
-                <h4>project title 2</h4>
-                <iframe src="" frameborder="1"></iframe>
-                <p>Lorem r adipisidignissimos neque quod in.</p>
+                <h4>Tic Tac Toe</h4>
+                <a href="https://c-elizabeth-dev.github.io/tic-tac-toe/" target="_blank" rel="noopener">
+                    <img src="/assets/tictactoe.png"></img>
+                </a>
+                <p class="clicktoview">Click Image to see app</p>
+                <p>
+                    Using HTML, CSS and JAVASCRIPT I created a simple, fun tic tac toe game. A classic! I enjoyed implementing my knowledge into something that is purely
+                    focussed on entertainment. I am excited to see what more I can do in this area and gather the skills required to create more detailed games.
+                </p>
+                <a class="gitlink" href="https://github.com/c-elizabeth-dev/tic-tac-toe" target="_blank" rel="noopener">GitHub code</a>
             </section>
+
             <section class="project-card">
-                <h4>project title 3</h4>
-                <iframe src="" frameborder="1"></iframe>
-                <p>Lorem ipsum dolosidignissimos neque quod in.</p>
-            </section>
-            <section class="project-card">
-                <h4>project title 4</h4>
-                <iframe src="" frameborder="1"></iframe>
-                <p>Lorem ipsumdignissimos neque quod in.</p>
-            </section>
-            <section class="project-card">
-                <h4>project title 5</h4>
-                <iframe src="" frameborder="1"></iframe>
-                <p>Lorem ipsum doissimos neque quod in.</p>
-            </section>
-            <section class="project-card">
-                <h4>project title 6</h4>
-                <iframe src="" frameborder="1"></iframe>
-                <p>Lorem ipsum dolornissimos neque quod in.</p>
+                <h4>Site Clone</h4>
+                <a href="" target="_blank" rel="noopener">
+                    <img src=""></img>
+                </a>
+                <p class="clicktoview">Click Image to see app</p>
+                <p>
+                </p>
+                <a class="gitlink" href="" target="_blank" rel="noopener">GitHub code</a>
             </section>
 
 
@@ -141,9 +186,12 @@
         </div>
     </div>
 
-<div id="hiddenContainer-contact" class="contact-container">
+
+
+    <div id="hiddenContainer-contact" class="contact-container">
     
         <h3 class="title">Contact</h3>
+        <div class="mail"><ion-icon name="mail-outline"></ion-icon></div>
         <h4>c.elizabeth.keane@gmail.com</h4>
         <div class="icon-container-c">
             <a class=icon-link-c href="https://www.linkedin.com/in/clare-elizabeth-keane-hedges-4bb8ab101/"">
@@ -153,7 +201,7 @@
                 <ion-icon name="logo-github"></ion-icon>
             </a> 
         </div>    
-</div>
+    </div>
 
 
 
