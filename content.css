@@ -48,6 +48,7 @@
 .skills-content {
     display: flex;
     justify-content: space-around; 
+    flex-direction: column;
   }
 
 .skills-content div {
@@ -61,20 +62,7 @@
 
 
 
-.iconnextcont {
-    display: flex;
-    justify-content: center;
-}
-.iconnext {
-    font-size: 40px;
-    padding: 15px;
-    width: 50px;
-    height: 50px;
-}
 
-.iconnext img {
-    object-fit: contain;
-}
 
 .small-text {
     font-size: 15px;

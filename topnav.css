@@ -95,7 +95,13 @@ header {
     z-index: 999;
 }
 
-
+.sector {
+    font-size: 15px;
+    font-family: 'Righteous', sans-serif;
+    font-weight: 300;
+    margin-left: 5px;
+    color: #fbf2cd;
+}
 .icon-container {
     display: flex;
     
@@ -166,7 +172,7 @@ header {
         justify-content: space-around;
         margin-left: 150px;
         margin-right: 150px;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         padding: 10px;
         background: rgba(255, 255, 255, 0.52);
         backdrop-filter: blur( 1.5px );
@@ -190,6 +196,11 @@ header {
 
     .header-portfolio {
         font-size: 150px;
+    }
+
+    .sector {
+        margin-left: 15px;
+        font-size: 20px;
     }
 
     .icon-link ion-icon {
