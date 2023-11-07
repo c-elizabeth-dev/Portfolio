@@ -61,7 +61,12 @@
 
 
 
-
+.large-para {
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Righteous', sans-serif;
+}
 
 
 .small-text {
@@ -187,6 +192,7 @@
         .skills-content {
             display:flex;
             justify-content: center;
+            flex-direction: row;
             font-size: 30px;
         }
 
